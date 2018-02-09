@@ -269,7 +269,7 @@ New-AzureRmKeyVault -VaultName 'ContosoKeyVaultHSM' -ResourceGroupName 'ContosoR
 You can add software-protected keys (as shown earlier) and HSM-protected keys to this key vault. To create an HSM-protected key, set the **-Destination** parameter to 'HSM':
 
 ```powershell
-$key = Add-AzureKeyVaultKey -VaultName 'ContosoKeyVaultHSM' -Name 'ContosoFirstHSMKey' -Destination 'HSM'
+$key = Add-AzureKeyVaultKey -VaultName 'ContosoKeyVaultHSM' -Name 'ContosoFirstHSMKey' -Destination 'HSM'  
 ```
 
 You can use the following command to import a key from a .PFX file on your computer. This command imports the key into HSMs in the Key Vault service:
